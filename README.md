@@ -3,7 +3,6 @@
 AuthBank is a React Native application built to demonstrate **authentication flows** using **React Context API**.  
 It includes **Login**, **Signup**, and **Home** screens with state management, navigation, and optional persistence.  
 This project serves as an assignment to test understanding of **Context API**, **form handling**, and **navigation** in React Native.
-
 ---
 
 ## 📦 Features
@@ -68,3 +67,31 @@ npx react-native run-android
 
 # Run on iOS
 npx react-native run-ios
+
+## 👥 Sample Users
+
+These accounts are pre‑seeded for testing login and signup flows.
+
+| ID  | Name            | Email              | Password   |
+|-----|-----------------|--------------------|------------|
+| 1   | Alice Johnson   | alice@example.com  | secure1    |
+| 2   | Bob Smith       | bob@example.com    | secure2    |
+| 3   | Charlie Brown   | charlie@example.com| secure3    |
+| 4   | Diana Prince    | diana@example.com  | secure4    |
+| 5   | Ethan Hunt      | ethan@example.com  | secure5    |
+| 6   | Fiona Gallagher | fiona@example.com  | secure6    |
+| 7   | George Miller   | george@example.com | secure7    |
+| 8   | Hannah Lee      | hannah@example.com | secure8    |
+| 9   | Ian Wright      | ian@example.com    | secure9    |
+| 10  | Julia Roberts   | julia@example.com  | secure10   |
+| 11  | Kevin Durant    | kevin@example.com  | secure11   |
+| 12  | Laura Palmer    | laura@example.com  | secure12   |
+| 13  | Michael Scott   | michael@example.com| secure13   |
+| 14  | Nina Simone     | nina@example.com   | secure14   |
+| 15  | Oscar Wilde     | oscar@example.com  | secure15   |
+| 16  | Paula Abdul     | paula@example.com  | secure16   |
+| 17  | Quentin Blake   | quentin@example.com| secure17   |
+| 18  | Rachel Green    | rachel@example.com | secure18   |
+| 19  | Sam Wilson      | sam@example.com    | secure19   |
+| 20  | Tina Fey        | tina@example.com   | secure20   |
+
