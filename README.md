@@ -74,24 +74,24 @@ These accounts are pre‑seeded for testing login and signup flows.
 
 | ID  | Name            | Email              | Password   |
 |-----|-----------------|--------------------|------------|
-| 1   | Alice Johnson   | alice@example.com  | alice123   |
-| 2   | Bob Smith       | bob@example.com    | bob456     |
-| 3   | Charlie Brown   | charlie@example.com| charlie789 |
-| 4   | Diana Prince    | diana@example.com  | diana123   |
-| 5   | Ethan Hunt      | ethan@example.com  | ethan456   |
-| 6   | Fiona Gallagher | fiona@example.com  | fiona789   |
-| 7   | George Miller   | george@example.com | george123  |
-| 8   | Hannah Lee      | hannah@example.com | hannah456  |
-| 9   | Ian Wright      | ian@example.com    | ian789     |
-| 10  | Julia Roberts   | julia@example.com  | julia123   |
-| 11  | Kevin Durant    | kevin@example.com  | kevin456   |
-| 12  | Laura Palmer    | laura@example.com  | laura789   |
-| 13  | Michael Scott   | michael@example.com| michael123 |
-| 14  | Nina Simone     | nina@example.com   | nina456    |
-| 15  | Oscar Wilde     | oscar@example.com  | oscar789   |
-| 16  | Paula Abdul     | paula@example.com  | paula123   |
-| 17  | Quentin Blake   | quentin@example.com| quentin456 |
-| 18  | Rachel Green    | rachel@example.com | rachel789  |
-| 19  | Sam Wilson      | sam@example.com    | sam123     |
-| 20  | Tina Fey        | tina@example.com   | tina456    |
+| 1   | Alice Johnson   | alice@example.com  | secure1    |
+| 2   | Bob Smith       | bob@example.com    | secure2    |
+| 3   | Charlie Brown   | charlie@example.com| secure3    |
+| 4   | Diana Prince    | diana@example.com  | secure4    |
+| 5   | Ethan Hunt      | ethan@example.com  | secure5    |
+| 6   | Fiona Gallagher | fiona@example.com  | secure6    |
+| 7   | George Miller   | george@example.com | secure7    |
+| 8   | Hannah Lee      | hannah@example.com | secure8    |
+| 9   | Ian Wright      | ian@example.com    | secure9    |
+| 10  | Julia Roberts   | julia@example.com  | secure10   |
+| 11  | Kevin Durant    | kevin@example.com  | secure11   |
+| 12  | Laura Palmer    | laura@example.com  | secure12   |
+| 13  | Michael Scott   | michael@example.com| secure13   |
+| 14  | Nina Simone     | nina@example.com   | secure14   |
+| 15  | Oscar Wilde     | oscar@example.com  | secure15   |
+| 16  | Paula Abdul     | paula@example.com  | secure16   |
+| 17  | Quentin Blake   | quentin@example.com| secure17   |
+| 18  | Rachel Green    | rachel@example.com | secure18   |
+| 19  | Sam Wilson      | sam@example.com    | secure19   |
+| 20  | Tina Fey        | tina@example.com   | secure20   |
 
