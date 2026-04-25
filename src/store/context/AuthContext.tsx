@@ -35,8 +35,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const logout = useCallback(async () => {
-    setUser(null);
     await AsyncStorage.removeItem('@bank_user');
+    await AsyncStorage.removeItem(`@bank_accs_${user?.id}`);
+    await AsyncStorage.removeItem(`@bank_txs_${user?.id}`);
+    setUser(null);
   }, []);
 
   return (
