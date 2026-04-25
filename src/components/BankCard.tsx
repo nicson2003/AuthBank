@@ -2,12 +2,11 @@ import React, { useRef, useEffect } from 'react';
 import { Animated, Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Account } from '../types';
+import type { Account } from '../types';
 import { useTheme } from '../store/context/ThemeContext';
 
-const { width } = Dimensions.get('window');
-const CARD_W = width - 48;
-const CARD_H = CARD_W * 0.575;
+const { width: SCREEN_W } = Dimensions.get('window');
+const DEFAULT_CARD_W = SCREEN_W - 48;
 
 const TYPE_LABELS: Record<string, string> = {
   checking:   'CHECKING',
@@ -19,23 +18,29 @@ interface Props {
   account: Account;
   isActive?: boolean;
   onPress?: () => void;
+  /** optional width in pixels; defaults to screen width minus horizontal padding */
+  width?: number;
 }
 
 function fmt(n: number): string {
   return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-const BankCard: React.FC<Props> = ({ account, isActive = false, onPress }) => {
+const BankCard: React.FC<Props> = ({ account, isActive = false, onPress, width = DEFAULT_CARD_W }) => {
   const { colors, isDark } = useTheme();
   const scale = useRef(new Animated.Value(isActive ? 1 : 0.96)).current;
   const opacity = useRef(new Animated.Value(isActive ? 1 : 0.7)).current;
 
+  // compute height from width so card scales correctly when width prop changes
+  const CARD_W = width;
+  const CARD_H = CARD_W * 0.575;
+
   useEffect(() => {
     Animated.parallel([
-      Animated.spring(scale,   { toValue: isActive ? 1 : 0.96, useNativeDriver: true, tension: 80, friction: 9 }),
+      Animated.spring(scale,   { toValue: isActive ? 1 : 0.96, useNativeDriver: true }),
       Animated.timing(opacity, { toValue: isActive ? 1 : 0.72, useNativeDriver: true, duration: 200 }),
     ]).start();
-  }, [isActive]);
+  }, [isActive, scale, opacity]);
 
   const grad: [string, string, string] = [colors.cardGrad1, colors.cardGrad2, colors.cardGrad3];
 

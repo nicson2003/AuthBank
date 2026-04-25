@@ -24,7 +24,7 @@ export interface AuthContextValue {
 
 // ─── Banking ─────────────────────────────────────────────────────────────────
 
-export type AccountType = 'checking' | 'savings' | 'investment';
+export type AccountType = 'checking' | 'savings' | 'investment' | 'credit' | 'loan';
 
 export interface Account {
   id: string;
