@@ -51,9 +51,6 @@ export const BankingProvider: React.FC<{ children: React.ReactNode }> = ({ child
         setAccounts(accs);
         setTransactions(txs);
         setActiveAccountId(accs[0]?.id ?? '');
-        console.log('Loaded accounts:', accs, accs[0]?.id);
-        console.log('Loaded transactions:', txs);
-        console.log('Active account ID:', accs[0]?.id);
       } catch (err) {
         console.error("Failed to load accounts:", err);
         setAccounts([]);
