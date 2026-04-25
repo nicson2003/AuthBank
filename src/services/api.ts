@@ -1,5 +1,6 @@
 export const API_BASE = "https://auth-bank-api.vercel.app/api";
 
+
 // 🔹 Get all users
 export async function getUsers() {
   const res = await fetch(`${API_BASE}/users`);
@@ -25,8 +26,8 @@ export async function getCards(accountId: string) {
 }
 
 // 🔹 Get transactions for an account
-export async function getTransactions(accountId: string) {
-  const res = await fetch(`${API_BASE}/transactions?accountId=${accountId}`);
+export async function getTransactions(userId: string) {
+  const res = await fetch(`${API_BASE}/transactions?userId=${userId}`);
   const data = await res.json();
   if (!data.success) throw new Error(data.message);
   return data.data;
